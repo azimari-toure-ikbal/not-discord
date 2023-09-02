@@ -1,0 +1,1 @@
+ALTER TABLE `profile` MODIFY COLUMN `id` varchar(44) NOT NULL DEFAULT UUID();

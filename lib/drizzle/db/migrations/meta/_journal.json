@@ -1,0 +1,90 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1693138722513,
+      "tag": "0000_opposite_titania",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1693139648424,
+      "tag": "0001_next_lethal_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1693139757621,
+      "tag": "0002_heavy_psynapse",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1693140023820,
+      "tag": "0003_omniscient_dreaming_celestial",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1693140162041,
+      "tag": "0004_worthless_pete_wisdom",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1693140181899,
+      "tag": "0005_overjoyed_texas_twister",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1693140237850,
+      "tag": "0006_wild_thena",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1693140287223,
+      "tag": "0007_dazzling_madelyne_pryor",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1693485100891,
+      "tag": "0008_amazing_union_jack",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1693554659895,
+      "tag": "0009_wet_iceman",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1693680651487,
+      "tag": "0010_foamy_hex",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "5",
+      "when": 1693680871645,
+      "tag": "0011_shallow_vulture",
+      "breakpoints": true
+    }
+  ]
+}

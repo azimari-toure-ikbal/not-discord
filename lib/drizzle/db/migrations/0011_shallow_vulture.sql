@@ -1,0 +1,1 @@
+ALTER TABLE `server` ADD CONSTRAINT `server_profileId_profile_id_fk` FOREIGN KEY (`profileId`) REFERENCES `profile`(`id`) ON DELETE no action ON UPDATE no action;

@@ -1,0 +1,1 @@
+ALTER TABLE `server` MODIFY COLUMN `imageUrl` text NOT NULL;
