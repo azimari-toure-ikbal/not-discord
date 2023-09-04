@@ -2,14 +2,12 @@ import { connect } from "@planetscale/database";
 import { drizzle } from "drizzle-orm/planetscale-serverless";
 import {
   channel,
-  channelsRelations,
   conversation,
   directMessage,
   member,
   message,
   profile,
   server,
-  serversRelations,
 } from "./schema/schema";
 // create the connection
 const connection = connect({
@@ -27,8 +25,6 @@ export const db = drizzle(connection, {
     messages: message,
     conversations: conversation,
     directMessages: directMessage,
-    serversRelations,
-    channelsRelations,
   },
 });
 export type DBClient = typeof db;

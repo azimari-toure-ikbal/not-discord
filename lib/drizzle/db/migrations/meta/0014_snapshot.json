@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "60a5c7b1-b2f4-43d1-9d0d-d589bf092fec",
-  "prevId": "c079f499-7b27-4bfb-a5f4-9dac814ced06",
+  "id": "a639fdef-8fc8-4ed2-8aca-cc7d1837c5ed",
+  "prevId": "136c118a-400c-413c-8f31-c99d5b12dd69",
   "tables": {
     "channel": {
       "name": "channel",
@@ -211,6 +211,14 @@
           "notNull": false,
           "autoincrement": false
         },
+        "deleted": {
+          "name": "deleted",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": false
+        },
         "createdAt": {
           "name": "createdAt",
           "type": "datetime",
@@ -355,6 +363,13 @@
         },
         "profileId": {
           "name": "profileId",
+          "type": "varchar(40)",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "memberId": {
+          "name": "memberId",
           "type": "varchar(40)",
           "primaryKey": false,
           "notNull": false,

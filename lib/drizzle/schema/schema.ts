@@ -27,8 +27,6 @@ export const profile = mysqlTable("profile", {
   updatedAt: datetime("updatedAt"),
 });
 
-export type Profile = InferSelectModel<typeof profile>;
-
 export const server = mysqlTable(
   "server",
   {
@@ -53,8 +51,6 @@ export const server = mysqlTable(
   },
 );
 
-export type Server = InferSelectModel<typeof server>;
-
 export const member = mysqlTable(
   "member",
   {
@@ -78,8 +74,6 @@ export const member = mysqlTable(
     };
   },
 );
-
-export type Member = InferSelectModel<typeof member>;
 
 export const channel = mysqlTable(
   "channel",
@@ -117,6 +111,9 @@ export const message = mysqlTable(
     content: text("content"),
     fileUrl: text("fileUrl"),
     profileId: varchar("profileId", {
+      length: 40,
+    }),
+    memberId: varchar("memberId", {
       length: 40,
     }),
     channelId: varchar("channelId", {
@@ -179,6 +176,7 @@ export const directMessage = mysqlTable(
     memberId: varchar("memberId", {
       length: 40,
     }),
+    deleted: boolean("deleted").default(false),
     createdAt: datetime("createdAt").default(sql`now()`),
     updatedAt: datetime("updatedAt"),
   },
@@ -189,8 +187,6 @@ export const directMessage = mysqlTable(
     };
   },
 );
-
-export type Channel = InferSelectModel<typeof channel>;
 
 export const profilesRelations = relations(profile, ({ many }) => ({
   servers: many(server),
@@ -242,6 +238,16 @@ export const channelsRelations = relations(channel, ({ one }) => ({
     references: [server.id],
   }),
 }));
+
+export type Profile = InferSelectModel<typeof profile>;
+
+export type Server = InferSelectModel<typeof server>;
+
+export type Member = InferSelectModel<typeof member>;
+
+export type Channel = InferSelectModel<typeof channel>;
+
+export type Message = InferSelectModel<typeof message>;
 
 export enum Role {
   ADMIN = "ADMIN",
